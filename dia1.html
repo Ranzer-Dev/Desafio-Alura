@@ -4,22 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Desafio Alura</title>
 </head>
-<header>
-    <nav>
-        <a href="dia1.html">Dia 1</a>
-        <a href="dia2.html">Dia 2</a>
-        <a href="dia3.html">Dia 3</a>
-        <a href="dia4.html">Dia 4</a>
-        <a href="dia5.html">Dia 5</a>
-        <a href="dia6.html">Dia 6</a>
-        <a href="dia7.html">Dia 7</a>
+<header id="cabecalho">
+    <nav class="cabecalho__navegacao">
+        <a class="cabecalho__navegacao__link" href="dia1.html">Dia 1</a>
+        <a class="cabecalho__navegacao__link" href="dia2.html">Dia 2</a>
+        <a class="cabecalho__navegacao__link" href="dia3.html">Dia 3</a>
+        <a class="cabecalho__navegacao__link" href="dia4.html">Dia 4</a>
+        <a class="cabecalho__navegacao__link" href="dia5.html">Dia 5</a>
+        <a class="cabecalho__navegacao__link" href="dia6.html">Dia 6</a>
+        <a class="cabecalho__navegacao__link" href="dia7.html">Dia 7</a>
     </nav>
 </header>
 <body>
-    <h1>Dia 1 - Desafio Alura</h1>
-    <h3>Neste primeiro dia eu tenho que imprimir o resultado correto de comparações, que frequentemente causam bugs devido sua conversão de tipo por debaixo dos panos</h3>
+    <main id="conteudo">
+        <section class="conteudo__principal">
+            <h1 class="conteudo__principal__titulo">Dia 1 - Desafio Alura</h1>
+            <p class="conteudo__principal__paragrafo">Neste primeiro dia eu tenho que imprimir o resultado correto de comparações, que frequentemente causam bugs devido sua conversão de tipo por debaixo dos panos</p>
+        </section>
+        <section class="conteudo__javascript">
+            <p>
+                let numeroUm = 1<br>
+                let stringUm = '1'<br>
+                let numeroTrinta = 30<br>
+                let stringTrinta = '30'<br>
+                let numeroDez = 10<br>
+                let stringDez = '10'<br>
+                <br>
+                if (numeroUm == stringUm) {<br>
+                console.log('As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes')<br>
+                } else {<br>
+                console.log('As variáveis numeroUm e stringUm não tem o mesmo valor')<br>
+                }<br>
+                <br>
+                if (numeroTrinta === stringTrinta) {<br>
+                console.log('As variáveis numeroTrinta e stringTrinta tem o mesmo valor e mesmo tipo')<br>
+                } else {<br>
+                console.log('As variáveis numeroTrinta e stringTrinta não tem o mesmo tipo')<br>
+                }<br>
+                <br>
+                if (numeroDez == stringDez) {<br>
+                console.log('As variáveis numeroDez e stringDez tem o mesmo valor, mas tipos diferentes')<br>
+                } else {<br>
+                console.log('As variáveis numeroDez e stringDez não tem o mesmo valor')<br>
+                }<br>
+            </p>
+        </section>
+    </main>
     <script src="script/script.js" ></script>
 </body>
 </html>
