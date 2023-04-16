@@ -25,26 +25,32 @@
             <p class="conteudo__principal__paragrafo">Neste primeiro dia eu tenho que imprimir o resultado correto de comparações, que frequentemente causam bugs devido sua conversão de tipo por debaixo dos panos</p>
         </section>
         <section class="conteudo__javascript">
-            <p>
-                let numeroUm = 1<br>
-                let stringUm = '1'<br>
-                let numeroTrinta = 30<br>
-                let stringTrinta = '30'<br>
-                let numeroDez = 10<br>
-                let stringDez = '10'<br>
+         <p>
+                let numeroUm = 1 (tipo:numero)<br>
+                let stringUm = '1' (tipo:string)<br>
+                let numeroTrinta = 30 (tipo:numero)<br>
+                let stringTrinta = '30' (tipo:string)<br>
+                let numeroDez = 10 (tipo:numero)<br>
+                let stringDez = '10' (tipo:string)<br>
                 <br>
+
+                <p class="conteudo__javascript__paragrafo">quando usamos o sinal de comparação == estamos comparando o valor da variavel, não o tipo</p>
+                <br>
+                <pre>      Retorna <strong>True</strong></pre>
                 if (numeroUm == stringUm) {<br>
                 console.log('As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes')<br>
                 } else {<br>
                 console.log('As variáveis numeroUm e stringUm não tem o mesmo valor')<br>
                 }<br>
                 <br>
+                <pre>      Retorna <strong>False</strong></pre>
                 if (numeroTrinta === stringTrinta) {<br>
                 console.log('As variáveis numeroTrinta e stringTrinta tem o mesmo valor e mesmo tipo')<br>
                 } else {<br>
                 console.log('As variáveis numeroTrinta e stringTrinta não tem o mesmo tipo')<br>
                 }<br>
                 <br>
+                <pre>      Retorna <strong>True</strong></pre>
                 if (numeroDez == stringDez) {<br>
                 console.log('As variáveis numeroDez e stringDez tem o mesmo valor, mas tipos diferentes')<br>
                 } else {<br>

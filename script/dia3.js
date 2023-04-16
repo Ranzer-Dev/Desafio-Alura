@@ -32,7 +32,7 @@ for(let i = 0; i < 99; i++){
         i = 99;
     }
 
-    for(let i = 2; i > 1; i++ ){
+    for(let i = 2; i >= 2; i++ ){
         objetivo = prompt("tem mais alguma tecnologia que você gostaria de aprender? 1 = ok , 2 = agora não ");
         if(objetivo == 1){
         objetivos.push(prompt("Qual linguagem você gostaria de Aprender?"))
