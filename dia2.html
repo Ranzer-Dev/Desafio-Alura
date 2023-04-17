@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Desafio Alura</title>
 </head>
-<header>
-    <nav>
-        <a href="dia1.html">Dia 1</a>
-        <a href="dia2.html">Dia 2</a>
-        <a href="dia3.html">Dia 3</a>
-        <a href="dia4.html">Dia 4</a>
-        <a href="dia5.html">Dia 5</a>
-        <a href="dia6.html">Dia 6</a>
-        <a href="dia7.html">Dia 7</a>
+<header id="cabecalho">
+    <nav class="cabecalho__navegacao">
+        <a class="cabecalho__navegacao__link" href="dia1.html">Dia 1</a>
+        <a class="cabecalho__navegacao__link" href="dia2.html">Dia 2</a>
+        <a class="cabecalho__navegacao__link" href="dia3.html">Dia 3</a>
+        <a class="cabecalho__navegacao__link" href="dia4.html">Dia 4</a>
+        <a class="cabecalho__navegacao__link" href="dia5.html">Dia 5</a>
+        <a class="cabecalho__navegacao__link" href="dia6.html">Dia 6</a>
+        <a class="cabecalho__navegacao__link" href="dia7.html">Dia 7</a>
     </nav>
 </header>
 <body>
-    <h1>Dia 2 - Desafio Alura</h1>
-    <h3>neste desafio devo criar variveis que interagem com o usuario</h3>
-    <script src="script/dia2.js"></script>
+    <main id="conteudo">
+        <section class="conteudo__principal">
+            <h1 class="conteudo__principal__titulo">Dia 2 - Desafio Alura</h1>
+            <p class="conteudo__principal__paragrafo">
+                Neste desafio devo criar variveis que interagem com o usuario e que imprimam esses valores para ele.
+            </p>
+            <script src="script/dia2.js"></script>
+        </section>
+        <section class="interacao">
+            Nome: <input class="aqui" value="aha" type="text" name="nome"><br />
+            Idade: <input type="text" name="idade"><br />
+            Linguagem: <input type="text"  name="Linguagem"><br />
+        </section>
+    </main>
 </body>
 </html>
