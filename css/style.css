@@ -29,10 +29,6 @@
     width: 70%;
 }
 
-.conteudo__principal {
-    
-}
-
 .conteudo__principal__titulo {
     text-align: center;
     font-size: 1.8em;
@@ -45,4 +41,15 @@
 
 .conteudo__javascript__paragrafo {
     font-size: 1.1em;
+}
+
+.conteudo__interacao__formulario{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo__interacao__formulario input:focus{
+   background-color: rgb(135, 156, 156);
 }
