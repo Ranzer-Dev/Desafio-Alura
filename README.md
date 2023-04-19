@@ -6,8 +6,8 @@ Desafio Alura 7 dias, fiz para fixar meus conhecimentos adiquiridos durante o cu
 | -------------  | --- |
 | :sparkles: Nome        | **#7DaysOfCode**
 | :label: Tecnologias | java, html, css (por enquanto)
-| :rocket: URL         | https://url-deploy.com.br
-| :fire: Desafio     | https://url-do-desafio.com.br
+| :rocket: URL         | https://github.com/Ranzer-Dev/Desafio-Alura
+| :fire: Desafio     | https://7daysofcode.io/matricula/logica-programacao
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
 ![](https://github.com/Ranzer-Dev/Desafio-Alura/blob/main/assets/capa.png#vitrinedev)
