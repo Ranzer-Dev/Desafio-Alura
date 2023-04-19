@@ -10,8 +10,10 @@ Desafio Alura 7 dias, fiz para fixar meus conhecimentos adiquiridos durante o cu
 | :fire: Desafio     | https://7daysofcode.io/matricula/logica-programacao
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](https://github.com/Ranzer-Dev/Desafio-Alura/blob/main/assets/capa.png#vitrinedev)
+<!-- ![](https://github.com/Ranzer-Dev/Desafio-Alura/blob/main/assets/capa.png#vitrinedev) -->
 
 ## Detalhes do projeto
+
+
 
 Textos e imagens que descrevam seu projeto, suas conquistas, seus desafios, próximos passos, etc.
