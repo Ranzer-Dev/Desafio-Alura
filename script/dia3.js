@@ -2,7 +2,17 @@ let destinos = [];
 let objetivos = [];
 let objetivo;
 
-destinos[0] = prompt("Qual área você deseja se desenvolver? Front-End = 1, Back-End = 2")
+let canvas = document.querySelector('canvas');
+let pincel = canvas.getContext('2d');
+
+pincel.fillStyle = "gray";
+pincel.fillRect(0, 0, 600, 400);
+
+pincel.fillStyle = "black";
+pincel.arc(300, 50, 10, 0, 360);
+pincel.fill();
+
+destinos[0] //prompt("Qual área você deseja se desenvolver? Front-End = 1, Back-End = 2")
 
 for(let i = 0; i < 99; i++){
     if (destinos[0] == 1) {
@@ -36,11 +46,11 @@ for(let i = 0; i < 99; i++){
 
 
     for(let i = 2; i >= 2; i++ ){
-        objetivo = prompt("tem mais alguma tecnologia que você gostaria de aprender? 1 = ok , 2 = agora não ");
+        //objetivo = prompt("tem mais alguma tecnologia que você gostaria de aprender? 1 = ok , 2 = agora não ");
             if(objetivo == 1){
-        objetivos.push(prompt("Qual linguagem você gostaria de Aprender?"))
+       // objetivos.push(prompt("Qual linguagem você gostaria de Aprender?"))
             } else if (objetivo == 2 || objetivo == null){
-                alert("até agora você quer aprender: "+objetivos+" novas linguagems");
+                //alert("até agora você quer aprender: "+objetivos+" novas linguagems");
                 i = 0;
             }
     }
