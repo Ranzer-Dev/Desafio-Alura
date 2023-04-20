@@ -16,4 +16,4 @@ Desafio Alura 7 dias, fiz para fixar meus conhecimentos adiquiridos durante o cu
 
 
 
-Textos e imagens que descrevam seu projeto, suas conquistas, seus desafios, próximos passos, etc.
+<!-- Textos e imagens que descrevam seu projeto, suas conquistas, seus desafios, próximos passos, etc. -->
