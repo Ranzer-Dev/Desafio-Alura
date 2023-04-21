@@ -40,11 +40,11 @@ for(let i = 0; i < 99; i++){
 
 
     for(let i = 2; i >= 2; i++ ){
-         objetivo = prompt("tem mais alguma tecnologia que você gostaria de aprender? 1 = ok , 2 = agora não ");
+        objetivo = prompt("tem mais alguma tecnologia que você gostaria de aprender? 1 = ok , 2 = agora não ");
             if(objetivo == 1){
           objetivos.push(prompt("Qual linguagem você gostaria de Aprender?"))
             } else if (objetivo == 2 || objetivo == null){
-                alert("até agora você quer aprender: "+objetivos+" novas linguagems");
+                alert("até agora você quer aprender: "+"\n"+objetivos+"\n"+"novas linguagems");
                 i = 0;
             }
     }
