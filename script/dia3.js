@@ -5,31 +5,8 @@ let x = 0;
 let y = 50;
 let objetivo;
 
-let canvas = document.querySelector('canvas');
-let pincel = canvas.getContext('2d');
+destinos[0] = prompt("Qual área você deseja se desenvolver? Front-End = 1, Back-End = 2")
 
-pincel.fillStyle = "gray";
-pincel.fillRect(0, 0, 600, 400);
-
-function pararAnimacao(){
-    cancelAnimationFrame(animacao);
-}
-
-function desenhaBolinha() {
-
-    pincel.clearRect(0, 0, 600, 400)
-
-    pincel.fillStyle = "black";
-    pincel.arc(x, y, 10, 0, 360);
-    pincel.fill();
-
-    x+=1;
-
-    animacao = requestAnimationFrame(desenhaBolinha);
-}
-
-destinos[0]// = prompt("Qual área você deseja se desenvolver? Front-End = 1, Back-End = 2")
-/*
 for(let i = 0; i < 99; i++){
     if (destinos[0] == 1) {
        destinos[1] = prompt("parabens você escolheu Front-End, dentro dessa especialização qual desses frameworks você vai se especializar? React = 1, Vue = 2 ?");
@@ -63,14 +40,12 @@ for(let i = 0; i < 99; i++){
 
 
     for(let i = 2; i >= 2; i++ ){
-       // objetivo = prompt("tem mais alguma tecnologia que você gostaria de aprender? 1 = ok , 2 = agora não ");
+         objetivo = prompt("tem mais alguma tecnologia que você gostaria de aprender? 1 = ok , 2 = agora não ");
             if(objetivo == 1){
-      //  objetivos.push(prompt("Qual linguagem você gostaria de Aprender?"))
+          objetivos.push(prompt("Qual linguagem você gostaria de Aprender?"))
             } else if (objetivo == 2 || objetivo == null){
-            //    alert("até agora você quer aprender: "+objetivos+" novas linguagems");
+                alert("até agora você quer aprender: "+objetivos+" novas linguagems");
                 i = 0;
             }
     }
-
-*/
 
