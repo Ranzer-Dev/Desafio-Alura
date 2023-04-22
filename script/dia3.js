@@ -1,77 +1,89 @@
-let animacao;
-let destinos = [];
+let pergunta = document.querySelector(".pergunta");
+let ok = document.querySelector(".ok");
+let resposta = [];
+let campoResposta = document.querySelector(".resposta");
 let objetivos = [];
-let x = 0;
-let y = 50;
 let objetivo;
+let n = 0;
 
-let canvas = document.querySelector('canvas');
-let pincel = canvas.getContext('2d');
-
-pincel.fillStyle = "gray";
-pincel.fillRect(0, 0, 600, 400);
-
-function pararAnimacao(){
-    cancelAnimationFrame(animacao);
+ok.onclick = function(){
+    armazena(n);
+    acrescenta();
+    pergunta2();
 }
 
-function desenhaBolinha() {
+campoResposta.onkeydown =  function(e){
+    if (e.key=="Enter" && campoResposta === document.activeElement){
+        armazena(n);
+        acrescenta();
+        pergunta2();
+        console.log("aaa");
+    }
+};
 
-    pincel.clearRect(0, 0, 600, 400)
-
-    pincel.fillStyle = "black";
-    pincel.arc(x, y, 10, 0, 360);
-    pincel.fill();
-
-    x+=1;
-
-    animacao = requestAnimationFrame(desenhaBolinha);
+window.onload = function() {
+    campoResposta.focus();
 }
 
-
-destinos[0]// = prompt("Qual área você deseja se desenvolver? Front-End = 1, Back-End = 2")
-/*
-for(let i = 0; i < 99; i++){
-    if (destinos[0] == 1) {
-       destinos[1] = prompt("parabens você escolheu Front-End, dentro dessa especialização qual desses frameworks você vai se especializar? React = 1, Vue = 2 ?");
-       x = 200; y = 150;
-    }else if(destinos[0] == 2){
-        destinos[2] = prompt("parabens você escolheu Back-End, dentro dessa especialização qual desses frameworks você quer se especializar? C# = 1, Java = 2");
-    } 
-    
-    if(destinos[1] == 1) {
-        destinos[3] = prompt("React, Muito Bom!!, vai querer ser fullstack = 1, ou prefere ficar fera na área escolhidas = 2 ?");
-        escolha = 99;
-    } else if (destinos[1] == 2) {
-        destinos[3] = prompt("Vue, Muito Bom!!, vai querer ser fullstack = 1, ou prefere ficar fera na área escolhidas = 2 ?");
-        escolha = 99;
+function acrescenta() {
+    if (campoResposta.value == 1 || campoResposta.value == 2) {
+        n = n+1;
+        campoResposta.value = null;
+    }else{
+        alert("Por favor, responda com 1 ou 2");
     }
+}
 
-    if(destinos[2] == 1) {
-        destinos[3] = prompt("C#, Muito Bom!!, vai querer ser fullstack = 1, ou prefere ficar fera na área escolhidas = 2 ?");
-        escolha = 99;
-    } else if (destinos[2] == 2) {
-        destinos[3] = prompt("Java, Muito Bom!!, vai querer ser fullstack = 1, ou prefere ficar fera na área escolhidas = 2 ?");
-        escolha = 99;
+function armazena(n) {
+    resposta[n] = document.querySelector(".resposta").value;
+}
+
+function pergunta2() {
+    if(resposta[0] == 1){
+        pergunta.innerHTML = "parabens você escolheu Front-End, dentro dessa especialização qual desses frameworks você vai se especializar? React = 1, Vue = 2 ?";
+        pergunta3();
+    } else if (resposta[0] == 2) {
+        pergunta.innerHTML = "parabens você escolheu Back-End, dentro dessa especialização qual desses frameworks você quer se especializar? C# = 1, Java = 2"
+        pergunta3();
     }
+}
 
-    if (destinos[3] == 1 || destinos[3] == 2 ){
+function pergunta3() {
+    if(resposta[1] == 1){
+        pergunta.innerHTML = "React, Muito Bom!!, vai querer ser fullstack = 1, ou prefere ficar fera na área escolhidas = 2 ?";
+        pergunta4();
+    } else if (resposta[1] == 2) {
+        pergunta.innerHTML = "Vue, Muito Bom!!, vai querer ser fullstack = 1, ou prefere ficar fera na área escolhidas = 2 ?"
+        pergunta4();
+    }
+}
+
+function pergunta4(){
+    if(resposta[2] == 1){
+        pergunta.innerHTML = "C#, Muito Bom!!, vai querer ser fullstack = 1, ou prefere ficar fera na área escolhidas = 2 ?";
+        pergunta5();
+    } else if (resposta[2] == 2) {
+        pergunta.innerHTML = "Java, Muito Bom!!, vai querer ser fullstack = 1, ou prefere ficar fera na área escolhidas = 2 ?"
+        pergunta5();
+    }
+}
+
+function pergunta5(){
+    if (resposta[3] == 1 || resposta[3] == 2 ){
         alert("parabens! idependente dessa escolha você tem muito potencial para evoluir e crescer!!!!")
-        i = 99;
+        pergunta.innerHTML = "tem mais alguma tecnologia que você gostaria de aprender? 1 = ok , 2 = agora não"
+        pergunta6();
     }
-
 }
 
-
-    for(let i = 2; i >= 2; i++ ){
-       // objetivo = prompt("tem mais alguma tecnologia que você gostaria de aprender? 1 = ok , 2 = agora não ");
-            if(objetivo == 1){
-      //  objetivos.push(prompt("Qual linguagem você gostaria de Aprender?"))
-            } else if (objetivo == 2 || objetivo == null){
-            //    alert("até agora você quer aprender: "+objetivos+" novas linguagems");
-                i = 0;
+    function pergunta6() {
+        for(let i = 2; i >= 2; i++ ){
+            if(resposta[4] == 1){
+             pergunta.innerHTML = "Qual linguagem você gostaria de Aprender?"
+                } else if (resposta[4] == 2 || resposta[4] == null){
+                    alert("até agora você quer aprender: "+"\n"+objetivos+"\n"+"novas linguagems");
+                    i = 0;
+                    n = 4;
             }
+        }
     }
-
-*/
-

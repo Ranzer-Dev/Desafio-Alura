@@ -54,3 +54,25 @@
 .conteudo__interacao__formulario input:focus{
    background-color: rgb(135, 156, 156);
 }
+
+.destino {
+    margin-bottom: 5%;
+}
+
+.resposta, .ok {
+    margin-top: 2%;
+}
+
+.ok {
+    margin-left: 1%;
+    padding: 3px;
+}
+
+.ok:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 5px black;
+}
+
+.resposta:focus{
+    background-color: lightgray;
+}
