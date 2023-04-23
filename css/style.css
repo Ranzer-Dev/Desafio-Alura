@@ -20,7 +20,7 @@
     color: black;
 }
 
-.cabecalho__navegacao__link:visited{
+.cabecalho__navegacao__link:visited {
     color: black;
 }
 
@@ -44,22 +44,22 @@
     font-size: 1.1em;
 }
 
-.conteudo__interacao__formulario{
+.conteudo__interacao__formulario {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
 }
 
-.conteudo__interacao__formulario input:focus{
-   background-color: rgb(135, 156, 156);
+.conteudo__interacao__formulario input:focus {
+    background-color: rgb(135, 156, 156);
 }
 
 .destino {
     margin-bottom: 5%;
 }
 
-.resposta, .ok {
+.resposta,.ok {
     margin-top: 2%;
 }
 
@@ -68,11 +68,11 @@
     padding: 3px;
 }
 
-.ok:hover{
+.ok:hover {
     transform: scale(1.1);
     box-shadow: 3px 3px 5px black;
 }
 
-.resposta:focus{
+.resposta:focus {
     background-color: lightgray;
 }

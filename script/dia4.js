@@ -13,7 +13,7 @@ for(let i = 3; i > 0 ; i--){
             chances--;
         }
     } else {
-        alert("você não tem escolha");
+        alert("preemcha o campo");
         adivinhacao = prompt("que pena, você errou, mas você tem "+chances+" Chances boa sorte");
         i = 3;
     }      
@@ -23,5 +23,5 @@ for(let i = 3; i > 0 ; i--){
 if (chances === 0 && adivinhacao !== numero){
     alert("você perdeu o jogo :(, o numero certo era "+numero);
 } else {
-    alert("Você acertou, Cagou!!!")
+    alert("Você acertou!!!")
 }

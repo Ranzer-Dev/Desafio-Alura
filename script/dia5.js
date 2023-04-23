@@ -6,11 +6,11 @@ let pergunta = prompt("Você quer adicionar algo na lista de compras?");
 let item;
 let setor;
 
-for(let i = 0; i < 99; i ++){
-if (pergunta == "sim"){
+for (let i = 0; i < 99; i++) {
+    if (pergunta == "sim") {
         item = prompt("Qual seria o item?")
         setor = prompt("O setor desse item seria de Frutas(1), Laticinios(2), Congelados(3) ou Doces(4)?")
-        switch (setor){
+        switch (setor) {
             case "1":
                 setorFrutas.push(item);
                 break;
@@ -28,8 +28,8 @@ if (pergunta == "sim"){
                 break;
         }
         pergunta = prompt("Você quer adicionar algo na lista de compras?");
-    } else if (pergunta == "nao"){
-        alert("lista de compras:"+"\n"+setorFrutas+"\n"+setorLaticinios+"\n"+setorCongelados+"\n"+setorDoces);
+    } else if (pergunta == "nao") {
+        alert("lista de compras:" + "\n" + setorFrutas + "\n" + setorLaticinios + "\n" + setorCongelados + "\n" + setorDoces);
         i = 99;
     }
 }
