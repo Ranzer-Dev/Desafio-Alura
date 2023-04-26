@@ -1,35 +1,35 @@
-/*
-const numero = Math.floor(Math.random()*10);
-let adivinhacao = prompt("Qual numero estou pensando? Dica é de 1 a 10, você tem "+chances);
-var chances = 2;
-*/
-
-let criaBotões = document.createElement('button');
-let adicionaBotões = document.body.insertBefore(criaBotões, null);
-let 
+const numero = Math.floor(Math.random() * 10);
+let chances = 2;
+let botoes = document.querySelectorAll(".botao");
+let campoTextoJogo = document.querySelector(".texto_jogo");
+let tentativas = '';
+let apertouBotao = '';
 
 
-/*
-for(let i = 2; i > 0 ; i--){
-    if(adivinhacao != ''){
-        if(adivinhacao == numero){1
-            alert("Parabens, esse era o numero que eu estava pensando")
-            i = 0;
-        } else {
-            adivinhacao = prompt("que pena, você errou, mas você tem "+chances+" Chances boa sorte");
-            chances--;
+function verificaBotaoApertado() {
+    for (let i = 0; i < botoes.length; i++) {
+        botoes[i].onclick = function () {
+            if (chances >= 0) {
+                apertouBotao = botoes[i].textContent;
+                botoes[i] = botoes[i].hidden = true;
+                testaNumero();
+                mudaTexto();
+                chances--;
+            }
         }
-    } else {
-        alert("preemcha o campo");
-        adivinhacao = prompt("que pena, você errou, mas você tem "+chances+" Chances boa sorte");
-        i = 2;
-    }      
+    }
 }
 
-
-if (chances === 0 && adivinhacao != numero){
-    alert("você perdeu o jogo :(, o numero certo era "+numero);
-} else if (adivinhacao == numero) {
-    alert("Você acertou!!!")
+function mudaTexto() {
+    tentativas = campoTextoJogo.innerHTML[9];
+    campoTextoJogo.innerHTML = campoTextoJogo.innerHTML.replace(tentativas, chances);
 }
-*/
+
+function testaNumero() {
+    if (apertouBotao == numero) {
+        alert("você acertou Parabens");
+        chances = 0;
+    }
+}
+
+verificaBotaoApertado();
