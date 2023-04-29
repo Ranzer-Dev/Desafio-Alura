@@ -21,26 +21,17 @@ function armazenaDados() {
     }
 }
 
-nome.onkeydown = function (e) {
+document.onkeydown = function (e) {
     if (e.key == 'Enter' && nome.value != '' && idade.value != '' && linguagem.value != '') {
         armazenaDados()
+    } else if (e.key == 'Enter' && (nome.value == '' || idade.value == '' || linguagem.value == '')) {
+        alert("Preencha os campos");
     }
 }
-
-idade.onkeydown = function (e) {
-    if (e.key == 'Enter' && nome.value != '' && idade.value != '' && linguagem.value != '') {
+botao.onclick = function (e) {
+    if (nome.value != '' && idade.value != '' && linguagem.value != '') {
         armazenaDados()
-    }
-}
-
-linguagem.onkeydown = function (e) {
-    if (e.key == 'Enter' && nome.value != '' && idade.value != '' && linguagem.value != '') {
-        armazenaDados()
-    }
-}
-
-botao.onclick = function () {
-    if (e.key == 'Enter' && nome.value != '' && idade.value != '' && linguagem.value != '') {
-        armazenaDados()
+    } else {
+        alert("Preencha os campos");
     }
 }

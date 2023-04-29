@@ -1,3 +1,4 @@
+/*
 let setorFrutas = [];
 let setorLaticinios = [];
 let setorCongelados = [];
@@ -33,3 +34,5 @@ for (let i = 0; i < 99; i++) {
         i = 99;
     }
 }
+*/
+

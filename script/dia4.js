@@ -12,8 +12,8 @@ function verificaBotaoApertado() {
             if (chances >= 0) {
                 apertouBotao = botoes[i].textContent;
                 botoes[i] = botoes[i].hidden = true;
-                testaNumero();
                 mudaTexto();
+                testaNumero();
                 chances--;
             }
         }
@@ -29,6 +29,9 @@ function testaNumero() {
     if (apertouBotao == numero) {
         alert("você acertou Parabens");
         chances = 0;
+        mudaTexto()
+    } else if (chances == 0){
+        campoTextoJogo.innerHTML = "Que pena você perdeu o numero era "+numero;
     }
 }
 
