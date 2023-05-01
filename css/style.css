@@ -120,13 +120,14 @@
     margin-bottom: 4%;
 }
 
-.botao {
+.botao_compra {
+    display: block;
     width: 30%;
     flex-grow: 1;
     flex-basis: 33%;
 }
 
-.botao:hover {
+.botao_compra:hover {
     transform: scale(1.1);
     box-shadow: 3px 3px 5px black;
 }
@@ -138,7 +139,7 @@
     padding: 4%;
 }
 
-.frutas, .laticinios, .congelados, .doces::after {
+.frutas, .laticinios, .congelados, .doces {
     padding: 1%;
 }
 
