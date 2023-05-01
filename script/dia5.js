@@ -1,38 +1,32 @@
-/*
-let setorFrutas = [];
-let setorLaticinios = [];
-let setorCongelados = [];
-let setorDoces = [];
-let pergunta = prompt("Você quer adicionar algo na lista de compras?");
+let secaoSetores = document.querySelector(".setores")
+let divSetores = secaoSetores.querySelectorAll("div")
+let produto = document.querySelectorAll(".compra_mercado")
+let botao = document.querySelectorAll(".botao")
 let item;
-let setor;
+let produtos = [""];
 
-for (let i = 0; i < 99; i++) {
-    if (pergunta == "sim") {
-        item = prompt("Qual seria o item?")
-        setor = prompt("O setor desse item seria de Frutas(1), Laticinios(2), Congelados(3) ou Doces(4)?")
-        switch (setor) {
-            case "1":
-                setorFrutas.push(item);
-                break;
-            case "2":
-                setorLaticinios.push(item);
-                break;
-            case "3":
-                setorCongelados.push(item);
-                break;
-            case "4":
-                setorDoces.push(item);
-                break;
-            default:
-                alert("escolha um dos setores");
-                break;
+function apertaBotao() {
+    for (let i = 0; i < botao.length; i++) {
+        botao[i].onclick = function () {
+            armazenaProduto();
+                if (botao[i].innerHTML == botao[i].innerHTML) {
+                    item = document.createElement("input");
+                    for(let i = 0; i < produtos.length; i++){
+                        item.value = produtos[i]
+                    }
+                    divSetores[i].insertBefore(item, null)
+                }
+            }
         }
-        pergunta = prompt("Você quer adicionar algo na lista de compras?");
-    } else if (pergunta == "nao") {
-        alert("lista de compras:" + "\n" + setorFrutas + "\n" + setorLaticinios + "\n" + setorCongelados + "\n" + setorDoces);
-        i = 99;
+    }
+
+function armazenaProduto() {
+    for (i = 0; i < produto.length; i++) {
+        if (produto[i].value != '') {
+            produtos.push(produto[i].value);
+            produto[i].value = null;
+        }
     }
 }
-*/
 
+apertaBotao();

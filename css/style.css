@@ -4,6 +4,8 @@
     margin: 0 auto;
 }
 
+/* estilo do menu de navegação */
+
 #cabecalho {
     background-color: gray;
 }
@@ -24,10 +26,15 @@
     color: black;
 }
 
+/*********************************/
+
+/* estilo do corpo, titulo e paragrafo */
+
 #conteudo {
     padding: 5%;
     margin: 0 auto;
     width: 70%;
+    text-align: center;
 }
 
 .conteudo__principal {
@@ -40,6 +47,10 @@
     font-size: 1.8em;
 }
 
+/*********************************/
+
+/* estilo dia 1 */
+
 .conteudo__principal__paragrafo {
     padding: 5% 0;
     font-size: 1.1em;
@@ -49,9 +60,7 @@
     font-size: 1.1em;
 }
 
-.texto_jogo{
-    margin-bottom: 4%;
-}
+/* estilo dia 2 */
 
 .conteudo__interacao__formulario {
     display: flex;
@@ -63,6 +72,19 @@
 .conteudo__interacao__formulario input:focus {
     background-color: rgb(135, 156, 156);
 }
+
+.botao {
+    width: 30%;
+    flex-grow: 1;
+    flex-basis: 33%;
+}
+
+.botao:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 5px black;
+}
+
+/* estilo dia 3 */
 
 .destino {
     margin-bottom: 5%;
@@ -86,10 +108,16 @@
     background-color: lightgray;
 }
 
+/* estilo dia 4 */
+
 .teclado {
     display: flex;
     flex-flow: row wrap;
     width: 50%;
+}
+
+.texto_jogo{
+    margin-bottom: 4%;
 }
 
 .botao {
@@ -101,4 +129,20 @@
 .botao:hover {
     transform: scale(1.1);
     box-shadow: 3px 3px 5px black;
+}
+
+/* estilo dia 5 */
+
+.setores {
+    border: 1px solid black;
+    padding: 4%;
+}
+
+.frutas, .laticinios, .congelados, .doces::after {
+    padding: 1%;
+}
+
+.compra_mercado {
+    display: block;
+    margin: 1% auto;
 }

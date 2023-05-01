@@ -68,11 +68,11 @@ function tecnologias() {
 }
 
 function adicionaElemento() {
-    let teste = document.createElement("input");
+    let input = document.createElement("input");
     let divLinguagens = document.querySelector(".divLinguagens");
-    divLinguagens.insertBefore(teste, null);
-    teste.readOnly = true;
-    teste.value = campoResposta.value; 
+    divLinguagens.insertBefore(input, null);
+    input.readOnly = true;
+    input.value = campoResposta.value; 
 }
 
 ok.onclick = function () {
