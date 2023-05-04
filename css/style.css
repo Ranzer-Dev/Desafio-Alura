@@ -121,10 +121,10 @@
 }
 
 .botao_compra {
-    display: block;
-    width: 30%;
+    display: inline-block;
+    width: 25%;
     flex-grow: 1;
-    flex-basis: 33%;
+    flex-basis: 25%;
 }
 
 .botao_compra:hover {
@@ -146,4 +146,9 @@
 .compra_mercado {
     display: block;
     margin: 1% auto;
+}
+
+.item {
+    border: none;
+    text-align: center;
 }
