@@ -168,3 +168,65 @@
     flex-flow: row wrap;
     justify-content: center;
 }
+
+/* estilos do dia 7 */
+
+.calculadora{
+    border-radius: 10px;
+    min-width: 150px;
+    width: 30%;
+    border: 2px solid black;
+    padding: 1%;
+}
+
+.botoes {
+    display: flex;
+    margin-top: 5%;
+    flex-flow: row wrap;
+    
+}
+button {
+    flex-basis: 22%;
+    height: 25px;
+    flex-grow: 1;
+    margin: 0.5%;
+}
+
+.visor{
+    border: 1px solid black;
+    margin: 2%;
+}
+
+.visor0 {
+    border: none;
+    width: 87%;
+    text-align: right;
+    display: inline-block;
+}
+
+.visor1 {
+    border: none;
+    width: 75%;
+    text-align: right;
+    display: inline-block;
+}
+
+.operacao {
+    border: none;
+    width: 10%;
+    text-align: center;
+    display: inline-block;
+}
+
+.ordem0 {
+    order: 0;
+    flex-basis: 72%;
+}
+
+.ordem1 {
+    order: 1;
+}
+
+.ordem2 {
+    order: 2;
+}
