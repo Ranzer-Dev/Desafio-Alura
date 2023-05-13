@@ -1,17 +1,17 @@
-let secaoSetores = document.querySelector(".setores");
+let secaoSetores = document.querySelector(".listas_items");
 let divSetores = secaoSetores.querySelectorAll("div");
 let produto = document.querySelector(".compra_mercado");
 let botao = document.querySelectorAll(".botao_compra");
 let items = [];
 let item;
+let nomeDoItem = "";
 let produtos = [];
 
 function removeItem() {
-    items = document.querySelectorAll(".item");
     for(let i = 0; i < items.length; i++){
         items[i].onclick = function() {
+            nomeDoItem = items[i].value;
             items[i].remove();
-            console.log("clicou");
         }
     }
 }
@@ -41,6 +41,13 @@ function armazenaProduto() {
     } else {
         alert("escreva um produto");
     }
+}
+
+new MutationObserver(testeMutacao).observe(secaoSetores, {childList: true, characterData: true, subtree: true});
+
+function testeMutacao() {
+    items = document.querySelectorAll(".item");
+    removeItem();
 }
 
 apertaBotao();

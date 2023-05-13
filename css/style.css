@@ -90,7 +90,8 @@
     margin-bottom: 5%;
 }
 
-.resposta,.ok {
+.resposta,
+.ok {
     margin-top: 2%;
 }
 
@@ -99,7 +100,7 @@
     padding: 3px;
 }
 
-.ok:hover{
+.ok:hover {
     transform: scale(1.1);
     box-shadow: 3px 3px 5px black;
 }
@@ -116,7 +117,7 @@
     width: 50%;
 }
 
-.texto_jogo{
+.texto_jogo {
     margin-bottom: 4%;
 }
 
@@ -132,15 +133,22 @@
     box-shadow: 3px 3px 5px black;
 }
 
-/* estilo dia 5 */
+/* estilo dia 5 e dia 6*/
 
 .setores {
+    box-sizing:unset;
     border: 1px solid black;
     padding: 4%;
 }
 
-.frutas, .laticinios, .congelados, .doces {
+.frutas,
+.laticinios,
+.congelados,
+.doces {
+    display: flex;
+    flex-flow: column wrap;
     padding: 1%;
+    width: 25%;
 }
 
 .compra_mercado {
@@ -151,4 +159,12 @@
 .item {
     border: none;
     text-align: center;
+    width: 90%;
+}
+
+
+.listas_items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
