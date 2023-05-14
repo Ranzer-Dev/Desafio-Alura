@@ -19,13 +19,8 @@ for (let i = 0; i < botoes.length; i++) {
                 visor1.value = null;
                 visor1.value = visor1.value + botoes[i].innerHTML;
             }
-            if (visor0.value == "") {
-                numeros[0] = Number(visor1.value);
-            } else {
-                numeros[1] = Number(visor1.value);
-            }
+            if (visor0.value == "" ? numeros[0] = Number(visor1.value) : numeros[1] = Number(visor1.value));
         }
-
         if (botoes[i].innerHTML == "AC"){
             numeros[1] = 0;
             numeros[0] = 0;
@@ -56,7 +51,7 @@ function soma() {
         visor0.value = numeros[0];
         visor1.value = null;
         operacao.value = "+";
-    }else {
+    } else {
        alert("coloque um numero") ;
     }
 }
