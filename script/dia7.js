@@ -7,74 +7,90 @@ let numeros = [];
 
 for (let i = 0; i < botoes.length; i++) {
     botoes[i].onclick = function () {
-        if(botoes[i].innerHTML != "+" &&
-           botoes[i].innerHTML != "-" &&
-           botoes[i].innerHTML != "/" &&
-           botoes[i].innerHTML != "*" &&
-           botoes[i].innerHTML != "="){
-            if(visor1.value != resultado){
+        if (botoes[i].innerHTML != "+" &&
+            botoes[i].innerHTML != "-" &&
+            botoes[i].innerHTML != "/" &&
+            botoes[i].innerHTML != "*" &&
+            botoes[i].innerHTML != "=") {
+            if (visor1.value != resultado) {
                 visor1.value = visor1.value + botoes[i].innerHTML;
             } else {
-                visor1.value = null; 
+                visor1.value = null;
                 visor1.value = visor1.value + botoes[i].innerHTML;
             }
-        if(visor0.value == ""){
-            numeros[0] = Number(visor1.value);
-        } else {
-            numeros[1] = Number(visor1.value);
+            if (visor0.value == "") {
+                numeros[0] = Number(visor1.value);
+            } else {
+                numeros[1] = Number(visor1.value);
+            }
+
         }
-        
-    }
-        if(botoes[i].innerHTML == "+"){
+        if (botoes[i].innerHTML == "+") {
             soma();
         }
-        if(botoes[i].innerHTML == "-"){
+        if (botoes[i].innerHTML == "-") {
             subtracao();
         }
-        if(botoes[i].innerHTML == "/"){
+        if (botoes[i].innerHTML == "/") {
             divisao();
         }
-        if(botoes[i].innerHTML == "*"){
+        if (botoes[i].innerHTML == "*") {
             multiplicacao();
         }
-        if(botoes[i].innerHTML == "=" ){
+        if (botoes[i].innerHTML == "=" && operacao.value != "" && visor1.value != '' ) {
             resultadoOperacao();
         }
     }
 }
 
-function soma(){
-    visor0.value = numeros[0];
-    visor1.value = null;
-    operacao.value = "+";
+function soma() {
+    if (visor1.value != ""){
+        visor0.value = numeros[0];
+        visor1.value = null;
+        operacao.value = "+";
+    }else {
+       alert("coloque um numero") ;
+    }
 }
-function subtracao(){
-    visor0.value = numeros[0];
-    visor1.value = null;
-    operacao.value = "-"
+function subtracao() {
+    if (visor1.value != ""){
+        visor0.value = numeros[0];
+        visor1.value = null;
+        operacao.value = "-";
+    }else {
+       alert("coloque um numero") ;
+    }
 }
-function divisao(){
-    visor0.value = numeros[0];
-    visor1.value = null;
-    operacao.value = "/"
+function divisao() {
+    if (visor1.value != ""){
+        visor0.value = numeros[0];
+        visor1.value = null;
+        operacao.value = "/";
+    }else {
+       alert("coloque um numero") ;
+    }
 }
-function multiplicacao(){
-    visor0.value = numeros[0];
-    visor1.value = null;
-    operacao.value = "*"
+function multiplicacao() {
+    if (visor1.value != ""){
+        visor0.value = numeros[0];
+        visor1.value = null;
+        operacao.value = "*";
+    }else {
+       alert("coloque um numero") ;
+    }
 }
 
-function resultadoOperacao(){
-    if(operacao.value == "+"){
+function resultadoOperacao() {
+    if (operacao.value == "+") {
         resultado = numeros[0] + numeros[1];
     }
-    if(operacao.value == "-"){
+    if (operacao.value == "-") {
         resultado = numeros[0] - numeros[1];
     }
-    if(operacao.value == "*"){
+    if (operacao.value == "*") {
         resultado = numeros[0] * numeros[1];
     }
-    if(operacao.value == "/"){
+    if (operacao.value == "/") {
         resultado = numeros[0] / numeros[1];
     }
     visor1.value = resultado
