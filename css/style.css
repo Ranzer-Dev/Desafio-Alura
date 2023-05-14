@@ -136,7 +136,7 @@
 /* estilo dia 5 e dia 6*/
 
 .setores {
-    box-sizing:unset;
+    box-sizing: unset;
     border: 1px solid black;
     padding: 4%;
 }
@@ -171,7 +171,7 @@
 
 /* estilos do dia 7 */
 
-.calculadora{
+.calculadora {
     background-color: rgb(187, 182, 182);
     border-radius: 10px;
     min-width: 150px;
@@ -184,8 +184,9 @@
     display: flex;
     margin-top: 5%;
     flex-flow: row wrap;
-    
+
 }
+
 button {
     flex-basis: 22%;
     height: 25px;
@@ -193,7 +194,7 @@ button {
     margin: 0.5%;
 }
 
-.visor{
+.visor {
     background-color: white;
     border: 1px solid black;
     margin: 2%;
@@ -208,7 +209,7 @@ button {
 
 .visor1 {
     border: none;
-    width: 75%;
+    width: 74%;
     text-align: right;
     display: inline-block;
 }

@@ -11,7 +11,8 @@ for (let i = 0; i < botoes.length; i++) {
             botoes[i].innerHTML != "-" &&
             botoes[i].innerHTML != "/" &&
             botoes[i].innerHTML != "*" &&
-            botoes[i].innerHTML != "=") {
+            botoes[i].innerHTML != "=" &&
+            botoes[i].innerHTML != "AC") {
             if (visor1.value != resultado) {
                 visor1.value = visor1.value + botoes[i].innerHTML;
             } else {
@@ -23,7 +24,14 @@ for (let i = 0; i < botoes.length; i++) {
             } else {
                 numeros[1] = Number(visor1.value);
             }
+        }
 
+        if (botoes[i].innerHTML == "AC"){
+            numeros[1] = 0;
+            numeros[0] = 0;
+            visor0.value = null;
+            visor1.value = null;
+            operacao.value = null;
         }
         if (botoes[i].innerHTML == "+") {
             soma();
