@@ -172,6 +172,7 @@
 /* estilos do dia 7 */
 
 .calculadora{
+    background-color: rgb(187, 182, 182);
     border-radius: 10px;
     min-width: 150px;
     width: 30%;
@@ -193,6 +194,7 @@ button {
 }
 
 .visor{
+    background-color: white;
     border: 1px solid black;
     margin: 2%;
 }
