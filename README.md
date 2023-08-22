@@ -5,7 +5,7 @@ Desafio Alura 7 dias, fiz para fixar meus conhecimentos adiquiridos durante o cu
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
 | :sparkles: Nome        | **#7DaysOfCode**
-| :label: Tecnologias | java, html, css (por enquanto)
+| :label: Tecnologias | javascript, html, css (por enquanto)
 | :rocket: URL         | https://codepen.io/Ranzer-Dev
 | :fire: Desafio     | https://7daysofcode.io/matricula/logica-programacao
 
