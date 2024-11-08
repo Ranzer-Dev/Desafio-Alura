@@ -1,4 +1,4 @@
-# Nome do meu projeto
+# Alutra 7 dias de Codigo
 
 Desafio Alura 7 dias, fiz para fixar meus conhecimentos adiquiridos durante o curso e também para praticar novos conceitos que vou aplicar frequentemente. um projeto vivo :V
 
